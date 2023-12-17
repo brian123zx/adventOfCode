@@ -1,0 +1,25 @@
+{
+  // "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    //   "esModuleInterop": true,
+    //   "target": "es6",
+    "moduleResolution": "NodeNext",
+    //   "sourceMap": true,
+    "outDir": "dist",
+    // "strict": true,
+    "skipLibCheck": true,
+    // "types": [
+    //   "node"
+    // ]
+  },
+  // "lib": [
+  //   "es2015"
+  // ]
+  // "include": [
+  //   "day/"
+  // ],
+  "exclude": [
+    "node_modules"
+  ]
+}
