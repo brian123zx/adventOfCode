@@ -1,0 +1,14 @@
+{
+  "name": "adventOfCode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:brian123zx/adventOfCode.git",
+  "author": "Brian Cooper <brianzx@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
