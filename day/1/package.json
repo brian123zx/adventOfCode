@@ -7,8 +7,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node --loader ts-node/esm dist/index.js",
-    "debug": "node --loader ts-node/esm --inspect-brk dist/index.js"
+    "start": "node --loader ts-node/esm index.ts",
+    "debug": "node --loader ts-node/esm --inspect-brk index.ts"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
