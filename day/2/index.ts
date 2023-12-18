@@ -34,7 +34,6 @@ const parseGame = (gameStr: string) => {
 
 const sum = input.split('\n').map(game => {
   const parsed = parseGame(game);
-  console.log(parsed)
 
   // check game
   const invalid = parsed.iterations.find(i => {
@@ -50,3 +49,19 @@ const sum = input.split('\n').map(game => {
 }, 0)
 
 console.log(sum)
+
+const powerSum = input.split('\n').map(game => {
+  const parsed = parseGame(game);
+  const gameMin = parsed.iterations.reduce((acc, i) => {
+    for (let c in i) {
+      if (!acc[c]) acc[c] = i[c];
+      else acc[c] = Math.max(acc[c], i[c])
+    }
+    return acc;
+  }, {});
+  return (gameMin.red || 0) * (gameMin.green || 0) * (gameMin.blue || 0);
+}).reduce((acc, g) => {
+  return acc + g;
+}, 0)
+
+console.log(powerSum)
